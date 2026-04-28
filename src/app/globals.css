@@ -11,48 +11,6 @@
   --font-family-mono: var(--font-geist-mono);
   --font-family-serif: var(--font-instrument-serif);
   --font-family-code: var(--font-jetbrains-mono);
-
-  /* ── Font Sizes ── */
-  --font-size-hero: 6rem;
-  --font-size-page: 4rem;
-  --font-size-section: 2.5rem;
-  --font-size-h1: 2rem;
-  --font-size-h2: 1.5rem;
-  --font-size-h3: 1.25rem;
-  --font-size-h4: 1rem;
-  --font-size-body-lg: 1.125rem;
-  --font-size-body-md: 1rem;
-  --font-size-body-sm: 0.875rem;
-  --font-size-label-md: 0.875rem;
-  --font-size-label-sm: 0.75rem;
-  --font-size-btn-md: 1rem;
-  --font-size-btn-sm: 0.875rem;
-  --font-size-caption: 0.75rem;
-  --font-size-code-md: 0.875rem;
-  --font-size-code-sm: 0.75rem;
-
-  /* ── Line Heights ── */
-  --leading-hero: 1.0417;
-  --leading-page: 1.09375;
-  --leading-section: 1.1;
-  --leading-h1: 1.1875;
-  --leading-h2: 1.3333;
-  --leading-h3: 1.4;
-  --leading-h4: 1.5;
-  --leading-body-lg: 1.5556;
-  --leading-body-md: 1.5;
-  --leading-body-sm: 1.4286;
-  --leading-label-md: 1.4286;
-  --leading-label-sm: 1.3333;
-  --leading-btn-md: 1.5;
-  --leading-btn-sm: 1.4286;
-  --leading-caption: 1.3333;
-  --leading-code-md: 1.2857;
-  --leading-code-sm: 1.3333;
-}
-
-body {
-  font-family: var(--font-geist-sans);
 }
 
 @theme inline {
@@ -96,20 +54,28 @@ body {
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* ── Design System Color Tokens ── */
+  --color-subtle: var(--subtle);
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-primary: var(--primary);
+  --color-brand: var(--brand);
+  --color-secondary: var(--secondary);
+  --color-input-helper: var(--input-helper);
+  --color-muted: var(--muted);
 }
 
 :root {
+  /* ── Shadcn base tokens ── */
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
@@ -131,20 +97,28 @@ body {
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* ── Design System — Light Mode ── */
+  --subtle: #edece8;
+  --canvas: #f7f6f3;
+  --surface: #ffffff;
+  --primary: #1a1917;
+  --brand: #f27a1a;
+  --secondary: #7c7b74;
+  --input-helper: #7c7b74;
+  --muted: #a3a29a;
 }
 
 .dark {
+  /* ── Shadcn base tokens ── */
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
   --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
   --accent: oklch(0.269 0 0);
   --accent-foreground: oklch(0.985 0 0);
@@ -165,6 +139,16 @@ body {
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+
+  /* ── Design System — Dark Mode ── */
+  --subtle: #2a2926;
+  --canvas: #141311;
+  --surface: #1e1d1a;
+  --primary: #f5f4f1;
+  --brand: #f27a1a;
+  --secondary: #b5b4ae;
+  --input-helper: #7c7b74;
+  --muted: #7c7b74;
 }
 
 @layer base {
