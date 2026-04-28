@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import ChatPageBackground from "@/components/ui/ChatPageBackground";
+
 import { Input } from "@/components/ui/Input";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
@@ -69,6 +71,23 @@ export default function Home() {
         <Input label="Email address" />
 
         <ThemeToggle />
+
+        <ChatPageBackground>
+          <div>
+            Content Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            totam perferendis dolorum eaque. Cupiditate, nisi repudiandae minus
+            aliquam iste dignissimos velit debitis molestiae vitae suscipit
+            alias sunt. Sit voluptate minima quidem eum soluta labore beatae
+            nobis eligendi ab quod numquam repudiandae modi qui vero quae nemo
+            laboriosam delectus, dolor quasi perferendis laborum rem iste nam
+            illum! Corporis molestiae ratione obcaecati quibusdam fugiat, ab
+            tempora nisi vitae quidem quisquam odit illum aspernatur iste. Sed
+            corporis impedit reprehenderit nemo, unde explicabo eaque provident
+            rem minima quod, dolor aut. Suscipit molestiae nihil, sapiente id
+            nisi distinctio saepe fugit omnis beatae accusantium possimus
+            assumenda. lorem3000
+          </div>
+        </ChatPageBackground>
       </main>
     </div>
   );
